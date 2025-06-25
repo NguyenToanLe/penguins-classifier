@@ -47,7 +47,7 @@ else:
 # --> cannot split into 2 categorical columns
 # Same for Island.
 # And the below block of code will not work correctly
-penguins_raw = pd.read_csv("./Penguin_Classification/penguins_cleaned.csv")
+penguins_raw = pd.read_csv("./penguins_cleaned.csv")
 penguins = penguins_raw.drop(columns=["species"])
 df = pd.concat([input_df, penguins], axis=0)
 
