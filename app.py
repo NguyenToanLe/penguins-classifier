@@ -67,7 +67,7 @@ if uploaded_file is None:
 st.write(df.to_markdown(index=False))
 
 # Reads in saved classification model
-load_classifier = pickle.load(open("./Penguin_Classification/penguins_classifier.pkl", "rb"))
+load_classifier = pickle.load(open("./penguins_classifier.pkl", "rb"))
 
 # Apply model to make predictions
 prediction = load_classifier.predict(df)
